@@ -34,7 +34,7 @@ def load_model(model_path: str | None = None) -> dict:
     """
     if model_path is None:
         base_dir   = os.path.dirname(os.path.abspath(__file__))
-        model_path = os.path.join(base_dir, "models", "credit_model.pkl")
+        model_path = os.path.join(base_dir, "credit_model.pkl")
 
     if not os.path.exists(model_path):
         raise FileNotFoundError(
